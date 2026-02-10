@@ -1,25 +1,25 @@
 {
     "classification": "Noise",
-    "file": "C:\\Users\\aanan\\AppData\\Local\\Temp\\tmplvoa_hea.wav",
+    "file": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmp7g2tl7gb.wav",
     "fs": 4000,
     "duration_s": 2.0,
     "events_detected": 5,
-    "event_rate_per_min": 225.08792497069166,
+    "event_rate_per_min": 141.6347005016229,
     "event_metrics": {
-        "mean_interval_s": 0.26656250000000004,
-        "std_interval_s": 0.07874074846450216,
-        "rate_per_min": 225.08792497069166
+        "mean_interval_s": 0.42362500000000003,
+        "std_interval_s": 0.27544472562566885,
+        "rate_per_min": 141.6347005016229
     },
-    "SNR_dB": 2.837860004090877,
+    "SNR_dB": 21.586276973352973,
     "energy": {
-        "pct_energy_below_300Hz": 31.827353288712715,
-        "spectral_centroid_hz": 450.0048629262365
+        "pct_energy_below_300Hz": 98.46538255161356,
+        "spectral_centroid_hz": 151.21875104243585
     },
     "150_1000Hz_band": {
         "band_hz": [
             150,
             1000
         ],
-        "band_energy_pct": 85.92334627938145
+        "band_energy_pct": 36.350296295774044
     }
 }

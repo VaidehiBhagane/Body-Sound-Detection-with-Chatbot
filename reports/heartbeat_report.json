@@ -1,6 +1,6 @@
 {
     "classification": "Murmur",
-    "file": "C:\\Users\\aanan\\AppData\\Local\\Temp\\tmpamm3j947.wav",
+    "file": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmp0nz6nqq1.wav",
     "fs": 2000,
     "duration_s": 6.638,
     "beats_detected": 12,
@@ -16,15 +16,15 @@
         "SD1_ms": 76.5978314169388,
         "SD2_ms": 106.91406678621703
     },
-    "SNR_dB": 6.9117991448958325,
+    "SNR_dB": 6.911799144982024,
     "energy": {
-        "pct_energy_below_200Hz": 63.170852264526566,
-        "spectral_centroid_hz": 174.35157885001993
+        "pct_energy_below_200Hz": 63.17085226444913,
+        "spectral_centroid_hz": 174.35157885004858
     },
     "S1S2": {
-        "S1_mean": 0.5373510986821953,
-        "S2_mean": 0.5178209970456745,
-        "S1_to_S2_ratio": 1.0377159322390284
+        "S1_mean": 0.5373510986828026,
+        "S2_mean": 0.5178209970461732,
+        "S1_to_S2_ratio": 1.0377159322392018
     },
     "extra_peaks": {
         "cycles_checked": 11,
@@ -41,6 +41,6 @@
             150,
             500
         ],
-        "band_energy_pct": 49.02864112904536
+        "band_energy_pct": 49.028641129329685
     }
 }
