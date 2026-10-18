@@ -170,7 +170,7 @@ def build_generic_agent(sound_type: str, json_path: str, patient_info: Optional[
     
     # Initialize Groq Chat Model
     llm = ChatGroq(
-        model_name="llama-3.3-70b-versatile",
+        model_name=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
         temperature=0,
         groq_api_key=groq_api_key or os.getenv("GROQ_API_KEY")
     )

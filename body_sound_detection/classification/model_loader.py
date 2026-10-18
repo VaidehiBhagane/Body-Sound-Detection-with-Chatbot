@@ -27,6 +27,13 @@ class CustomGRU(OriginalGRU):
         super().__init__(*args, **kwargs)
 
 
+# Custom Dense to ignore 'quantization_config' written by newer Keras versions
+class CustomDense(layers.Dense):
+    def __init__(self, *args, **kwargs):
+        kwargs.pop('quantization_config', None)
+        super().__init__(*args, **kwargs)
+
+
 @st.cache_resource
 def load_heart_model(use_huggingface: bool = True, local_path: str = "models/lstm_model.h5"):
     """
@@ -49,7 +56,7 @@ def load_heart_model(use_huggingface: bool = True, local_path: str = "models/lst
         
         model = tf.keras.models.load_model(
             model_path,
-            custom_objects={'LSTM': CustomLSTM}
+            custom_objects={'LSTM': CustomLSTM, 'Dense': CustomDense}
         )
         st.success("✅ Heart model loaded successfully")
         return model
@@ -73,7 +80,7 @@ def load_lung_model():
 
         model = tf.keras.models.load_model(
             model_path,
-            custom_objects={"GRU": CustomGRU}
+            custom_objects={"GRU": CustomGRU, "Dense": CustomDense}
         )
 
         model.compile(
