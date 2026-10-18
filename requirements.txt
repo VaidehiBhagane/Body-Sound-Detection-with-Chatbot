@@ -13,7 +13,7 @@ matplotlib
 
 # model loading
 scikit-learn
-tensorflow>=2.16.1
+tensorflow>=2.16.2
 tf-keras
 
 
